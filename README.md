@@ -1,1 +1,1 @@
-# dazaar-rpc
+# dazaar-guild

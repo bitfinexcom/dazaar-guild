@@ -1,0 +1,33 @@
+{
+  "name": "dazaar-rpc",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Dazaar",
+  "author": {
+    "name": "prdn",
+    "email": "paolo@bitfinex.com"
+  },
+  "keywords": [
+    "bitfinex"
+  ],
+  "dependencies": {
+    "async": "^3.2.0",
+    "dazaar": "https://github.com/bitfinexcom/dazaar.git",
+    "debug": "^4.3.1",
+    "lodash": "^4.17.15"
+  },
+  "engine": {
+    "node": ">=10.0"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfinexcom/dazaar-rpc.git"
+  },
+  "maintainers": [
+    {
+      "name": "prdn",
+      "email": "paolo@bitfinex.com"
+    }
+  ]
+}
