@@ -3,7 +3,7 @@ const Priv = require('./../lib/priv')
 
 const bastion = new Bastion({
   dir: './data'
-}, {})
+})
 
 const MEM = {}
 
