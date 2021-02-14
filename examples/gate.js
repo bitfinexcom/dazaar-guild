@@ -2,7 +2,11 @@ const Bastion = require('./../lib/bastion')
 const Priv = require('./../lib/priv')
 
 const bastion = new Bastion({
-  dir: './data'
+  dir: './data',
+  customValidate: (key, cb) => {
+    console.log('bastion: validationRequest for', key.toString('hex'))
+    cb(null)
+  }
 })
 
 const MEM = {}
@@ -30,11 +34,14 @@ bastion.on('message', p => {
 bastion.start()
 
 const priv = new Priv({
-  dir: './data'
+  dir: './data',
+  customValidate: (key, cb) => {
+    console.log('priv: validationRequest for', key.toString('hex'))
+    cb(null)
+  }
 })
 
 priv.on('message', p => {
-  console.log('EHERERE', p)
   if (p.data === 'hello') {
     p.reply('world (priv)')
   }
