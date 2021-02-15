@@ -1,5 +1,4 @@
-const Bastion = require('./../lib/bastion')
-const Priv = require('./../lib/priv')
+const { Bastion, Priv }  = require('../index')
 
 const bastion = new Bastion({
   dir: './data',

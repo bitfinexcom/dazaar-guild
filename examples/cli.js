@@ -1,4 +1,4 @@
-const Client = require('../lib/client')
+const { Client } = require('../index')
 
 const client = new Client({
   bastionKey: process.argv[2]
